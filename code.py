@@ -50,3 +50,24 @@ for i in new_path[::-1]:
 
                     
 
+
+to_check_direction = {'l':'l','r':'r','f':'f','b':'b'}
+To_check = []
+x = final[-1]
+for i in path:
+    for key,value in main_dir.items():
+        if i == key:
+            for k,v in value.items():
+                if x in k:
+                    x = v
+                    To_check.append(x)
+                    break
+
+
+print("final position,{}".format(final_position))
+print("original position, {}".format(position))
+
+# if position == To_check[-1]:
+#     print("true")
+# else:
+#     print("false")
