@@ -1,6 +1,12 @@
+#Postion from where the robot starts its journey
 final_position = input("enter final position")
-path = input("enter path from intial position")
-
+#robot knows the path from its inital position
+# give path in form of (l,r,f,b)
+# l = left r = right, f = forward, b = backward
+path = input("enter path for intial position")
+dfd
+f
+#the manual mapping of cube in form of xcdssdgsd
 main_dir = {'f' :({'1e':'2n','1w':'5n','1u':'3n','1d':'6n','2n':'4w','2s':'1w','2u':'3w','2d':'6w',
              '3e':'2d','3w':'5d','3n':'4d','3s':'1d','4e':'2s','4w':'5s','4u':'3s','4d':'6s',
              '5n':'4e','5s':'1e','5u':'3e','5d':'6e','6e':'2u','6w':'5u','6n':'4u','6s':'1u'}),
