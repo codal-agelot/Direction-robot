@@ -64,4 +64,4 @@ for i in path:
 print("final position,{}".format(final_position))
 print("original position, {}".format(position))
                   
-
+# print("true") if position == To_check else print("false")
