@@ -67,5 +67,6 @@ for i in path:
 print("final position,{}".format(final_position))
 print("original position, {}".format(position))
 
+#To check the whole process in reverse
 # print("True") if position == To_check[-1] else print("False")
 
