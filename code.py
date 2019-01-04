@@ -29,7 +29,7 @@ Direction = {'f':('f','f','f'),'b':'b','l':('l','l'),'r':('r','r')}
 
 new_path =  []
 
-#
+
 for i in path:
     for key,value in Direction.items():
         if i == key:
@@ -67,8 +67,5 @@ for i in path:
 print("final position,{}".format(final_position))
 print("original position, {}".format(position))
 
-# if position == To_check[-1]:
-#     print("true")
-# else:
-#     print("false")
+# print("True") if position == To_check[-1] else print("False")
 
