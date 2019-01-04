@@ -1,12 +1,11 @@
 #Postion from where the robot starts its journey
 final_position = input("enter final position")
-#robot knows the path from its inital position
+
 # give path in form of (l,r,f,b)
 # l = left r = right, f = forward, b = backward
 path = input("enter path for intial position")
-dfd
-f
-#the manual mapping of cube in form of xcdssdgsd
+
+#the manual mapping of cube in form of nested dictonary
 main_dir = {'f' :({'1e':'2n','1w':'5n','1u':'3n','1d':'6n','2n':'4w','2s':'1w','2u':'3w','2d':'6w',
              '3e':'2d','3w':'5d','3n':'4d','3s':'1d','4e':'2s','4w':'5s','4u':'3s','4d':'6s',
              '5n':'4e','5s':'1e','5u':'3e','5d':'6e','6e':'2u','6w':'5u','6n':'4u','6s':'1u'}),
@@ -25,16 +24,18 @@ main_dir = {'f' :({'1e':'2n','1w':'5n','1u':'3n','1d':'6n','2n':'4w','2s':'1w','
 
 }
 
+# this dictonary is like controller of robot, it gives the direction to the robot
 Direction = {'f':('f','f','f'),'b':'b','l':('l','l'),'r':('r','r')}
 
 new_path =  []
 
+#
 for i in path:
     for key,value in Direction.items():
         if i == key:
             new_path.extend(value)
 
-
+# this new_path gives you the path which leads to its initial position.
 print(new_path)
 
 for i in new_path[::-1]:
@@ -43,7 +44,9 @@ for i in new_path[::-1]:
             for k,v in value.items():
                 if final_position in k:
                     final_position = v
+                    #final_position is your initial position.
                     print(final_position)
                     break
 
+                    
 
